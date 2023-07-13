@@ -1,5 +1,6 @@
 let nums = [1,3,5,6]
-let target = 5
+let target = 554
+
 
 var searchInsert = function(nums, target) {
     let left = 0 
