@@ -13,3 +13,13 @@ var reverseList = function(head) {
 
 // pre  cur next 
 //     [1,   2,   3, 4,   5 ,6]
+
+var reverseList = function(head) {
+    function helper(cur,pre){
+        if(!cur) return pre
+        let next = cur.next
+        cur.next = pre 
+        return helper(next,cur)
+    }
+    return helper(cur,null)
+};
